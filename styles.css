@@ -1,0 +1,89 @@
+html {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+}
+
+#backgroundVid {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: -1;
+}
+
+#myVideo {
+  height: 100vh;
+}
+
+input {
+  margin: 90px auto;
+  width: 305px;
+  display: block;
+  border-radius: 58px;
+  text-align: center;
+  padding: 10px 10px;
+  padding-bottom: 12px;
+  background-color: transparent;
+  border: white 2px solid;
+  font-size: 30px;
+  font-family: "Righteous", cursive;
+  color: grey;
+  caret-color: transparent;
+  outline: none;
+}
+
+input:focus {
+  border: red 1px solid;
+}
+
+#title {
+  color: red;
+  margin: 3% auto;
+  width: fit-content;
+  font-size: 9rem;
+  font-family: "Righteous", cursive;
+  letter-spacing: 7px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-gap: 30px 30px;
+  margin: 2% auto;
+  width: fit-content;
+}
+
+.gridItem {
+  height: 200px;
+  border: 2px dotted red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+.audio {
+  width: 83%;
+  height: 20%;
+}
+
+audio {
+  border-radius: 0px;
+}
+audio::-webkit-media-controls-panel {
+  background-color: red;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: repeat(1, 200px);
+  }
+
+  #title {
+    font-size: 6rem;
+    margin: 8% auto;
+  }
+
+  input {
+    width: 290px;
+  }
+}
